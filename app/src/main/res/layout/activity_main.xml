@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0D2D2"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="72dp">
+
+        <!-- Ana Yemekler -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ana Yemekler"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMainCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonIcliKofte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İçli Köfte" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKusbasiDurum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kuşbaşı Dürüm" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKuruFasulye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kuru Fasulye" />
+        </RadioGroup>
+
+        <!-- Ekstralar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ekstralar"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxKizartmaTabagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kızartma Tabağı" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCigKofte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çiğköfte" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCorba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çorba" />
+
+        <!-- İçecekler -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İçecekler"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxKola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kola" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAyran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayran" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSalgam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Şalgam" />
+
+        <!-- Sipariş Ver Butonu -->
+
+        <Button
+            android:id="@+id/buttonSiparisVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:text="Sipariş Ver" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
